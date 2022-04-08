@@ -70,15 +70,28 @@ public class Main {
         1.57, 7.654, 9.986
 	    */
         for (int i = arrs.length - 1; i >= 0; i--) {
-            System.out.print(arrs[i] + " ");
+            if (i >= 1){
+                System.out.print(arrs[i] + ", ");
+            } else {
+                System.out.print(arrs[i] + " ");
+            }
+
         } System.out.println(" "); // empty line
 
         for (float k = arrs2.length - 1; k >= 0; k--) {
-            System.out.print(arrs2[(int)k] + " ");
+            if (k >= 1){
+                System.out.print(arrs2[(int)k] + ", ");
+            } else {
+                System.out.print(arrs2[(int)k] + " ");
+            }
         } System.out.println(" ");  // empty line
 
         for (int j = arrs3.length - 1; j >= 0; j--) {
-            System.out.print(arrs3[j] + " ");
+            if (j >= 1){
+                System.out.print(arrs3[(int)j] + ", ");
+            } else {
+                System.out.print(arrs3[(int)j] + " ");
+            }
         } System.out.println(" ");  // empty line
 
         /*
@@ -92,7 +105,8 @@ public class Main {
             if (arrs[i] % 2 != 0) {
                 arrs[i] += 1;
             }
-            System.out.print(arrs[i] + " ");
+           if (i != arrs.length - 1) System.out.print(arrs[i] + ", ");
+           else System.out.print(arrs[i] + " ");
         } System.out.println(" "); // empty line
     }
 }
